@@ -6,6 +6,7 @@
 # símbolo * y para envolver un regalo se coloca el símbolo * de forma que
 # rodee totalmente al string por todos los lados. Por ejemplo:
 
+# Ejecucion1
 regalo1=input("Regalo 1:")
 regalo2=input("Regalo 2:")
 regalo3=input("Regalo 3:")
@@ -14,6 +15,17 @@ regalo5=input("Regalo 5:")
 
 print("Empaquetado realizado")
 
-listaRegalos=(regalo1,regalo2,regalo3,regalo4)
+listaRegalos=(regalo1,regalo2,regalo3,regalo4,regalo5)
+
+
+
+print("[".ljust(20,"*"))
+
 for regalo in listaRegalos:
-    print(f"*****{regalo}*****")
+
+    print(f"{regalo}".center(20,"*"))
+
+print("]".rjust(20,"*"))
+
+
+
